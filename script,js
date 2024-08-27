@@ -1,0 +1,18 @@
+let titulo = document.createElement("h1");
+
+titulo.innerText = "Produtos Eletrônicos";
+titulo.id = "titulo";
+
+let body = document.querySelector("body");
+body.appendChild(titulo);
+
+const produto = document.createElement("div");
+produto.id = "produto";
+produto.innerHTML = `
+    <h3>Headset Gamer</h3>
+    <p>Ideais para jogadores que buscam uma imersão completa e comunicação eficaz durante as partidas.</p>
+    <p>Preço: R$ 299,99</p>
+    <img src="./-29846128.jpg" width="150px" alt="Imagem do Produto" />
+`;
+
+body.appendChild(produto);
